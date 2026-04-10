@@ -1,0 +1,64 @@
+La Escalera Inteligente 🏢 (con ciclo while)
+
+# La escalera inteligente
+# ========================
+# Este programa le muestra a una persona los pasos
+# que debe seguir para bajar desde su piso hasta el piso 1
+
+# Le preguntamos al usuario en qué piso está
+piso_actual = int(input("¿En qué piso estás? "))
+
+print("") # línea en blanco para que se vea bonito
+print("Aquí están tus pasos para bajar:")
+print("") # línea en blanco
+
+# El ciclo while funciona así:
+# "Mientras el piso actual sea mayor que 1, sigue bajando"
+# En el momento en que lleguemos al piso 1, el ciclo se detiene solo
+
+while piso_actual > 1:
+
+    # Calculamos cuál es el siguiente piso (siempre es uno menos)
+    siguiente_piso = piso_actual - 1
+
+    # Le mostramos el paso a la persona
+    print(f"Baja al piso {siguiente_piso}")
+
+    # Actualizamos el piso actual para el siguiente paso del ciclo
+    # (ahora "estamos" en el piso de abajo)
+    piso_actual = siguiente_piso
+
+# Cuando el ciclo termina, ya llegamos al piso 1
+print("")
+print("¡Llegaste al piso 1! Ya estás abajo 🎉")
+
+
+¿Qué hace cada parte? 🔍
+int(input(...)) → Le pregunta al usuario el piso y convierte su respuesta en número.
+while piso_actual > 1 → Es la pregunta que se hace en cada vuelta:
+	•	¿Estoy por encima del piso 1? → Sigue bajando
+	•	¿Ya llegué al piso 1? → Para
+siguiente_piso = piso_actual - 1 → Calcula el piso de abajo.
+piso_actual = siguiente_piso → Actualiza la posición para la siguiente vuelta. Sin esta línea el ciclo sería infinito porque nunca avanzaría.
+
+Ejemplo de salida si el usuario escribe 5 🖥️
+
+¿En qué piso estás? 5
+
+Aquí están tus pasos para bajar:
+
+Baja al piso 4
+Baja al piso 3
+Baja al piso 2
+Baja al piso 1
+
+¡Llegaste al piso 1! Ya estás abajo 🎉
+
+
+Respondiendo las 3 preguntas 📋
+a) ¿Cómo sabe cuándo detenerse?
+El while tiene una condición: piso_actual > 1. En cada vuelta se pregunta eso. Cuando el piso llega a 1, la condición deja de cumplirse y el ciclo para solo.
+b) ¿Cómo repite el proceso sin equivocarse?
+Al final de cada vuelta, actualizamos piso_actual con el nuevo piso. Así en la siguiente vuelta el programa siempre trabaja con el número correcto.
+c) ¿Por qué no necesita saber todo desde el inicio?
+Porque en cada vuelta solo hace una cosa: bajar un piso. No necesita saber cuántas vueltas va a dar. Solo sabe que mientras no llegue al piso 1, debe seguir bajando.​​​​​​​​​​​​​​​​
