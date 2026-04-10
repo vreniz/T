@@ -1,0 +1,31 @@
+# La escalera inteligente
+# ========================
+# Este programa le muestra a una persona los pasos
+# que debe seguir para bajar desde su piso hasta el piso 1
+
+# Le preguntamos al usuario en qué piso está
+piso_actual = int(input("¿En qué piso estás? "))
+
+print("") # línea en blanco para que se vea bonito
+print("Aquí están tus pasos para bajar:")
+print("") # línea en blanco
+
+# El ciclo while funciona así:
+# "Mientras el piso actual sea mayor que 1, sigue bajando"
+# En el momento en que lleguemos al piso 1, el ciclo se detiene solo
+
+while piso_actual > 1:
+
+    # Calculamos cuál es el siguiente piso (siempre es uno menos)
+    siguiente_piso = piso_actual - 1
+
+    # Le mostramos el paso a la persona
+    print(f"Baja al piso {siguiente_piso}")
+
+    # Actualizamos el piso actual para el siguiente paso del ciclo
+    # (ahora "estamos" en el piso de abajo)
+    piso_actual = siguiente_piso
+
+# Cuando el ciclo termina, ya llegamos al piso 1
+print("")
+print("¡Llegaste al piso 1! Ya estás abajo 🎉")
