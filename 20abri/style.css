@@ -1,0 +1,13 @@
+@import".assets/css/reset.css";
+@import".assets/css/header.css";
+@import".assets/css/footer.css";
+@import".assets/css/main.css";
+/* id > class > tag  no usar !important, id no para diseño algo muy especial o que siempre se va a estar aplicando (usar classes pueden ser 10.000) */
+
+body {
+    display:grid;
+    /* grid-template: rows/columns; */
+    grid-template: 50px 1fr 50px/ repeat(3, 1fr);
+    min-height: 100vh;
+    gap: 2.5%;
+}

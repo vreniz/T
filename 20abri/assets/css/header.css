@@ -1,0 +1,14 @@
+header{
+    grid-column: 1/4;
+    background-color: rgb(107, 88, 62);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (min-width:1024px) {
+    header{
+        background-color: blueviolet;
+    }
+    
+}
