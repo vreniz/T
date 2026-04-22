@@ -19,3 +19,4 @@ Los proyectos se organicen en 2 columnas: Si en Ipad Air de 820*1180 (ver que ha
 La galería tenga 3 columnas: NO, esta mostrando de a 2 columnas en Ipad Air 820*1180 y 1 en ipad mini, en ambos debe mostrar 3 
 
 En pantallas grandes (escritorio), mantén el layout de 3 o más columnas: si cumple 
+https://blog.hubspot.com/website/css-animation-examples
